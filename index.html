@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Cidadãos do Futuro</title>
+  <title>Anjinhos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="icons/icon-72x72.png" sizes="72x72" type="image/png" />
@@ -29,7 +29,7 @@
 
   <style>
     html {
-      background: #444;
+      background: purple;
       font-family: sans-serif;
     }
 
@@ -49,7 +49,7 @@
     }
 
     #canvas {
-      background: #000;
+      background: purple;
     }
 
     .visible {
@@ -65,7 +65,7 @@
     }
 
     #statusDiv, #inputDiv {
-      background: rgba(0, 0, 0, 0.75);
+      background: rgba(128, 0, 128, 0.589);
       width: 50%;
       margin: auto;
       min-width: 340px;
@@ -125,13 +125,13 @@
     }
 
     #ContextContainer.shown {
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(128, 0, 128, 0.589);
       border-radius: 0px 0px 5px 0px;
     }
 
     #ContextButton {
       text-decoration: none;
-      color: lightgrey;
+      color: yellow;
       font-size: xx-large;
       cursor: pointer;
       user-select: none;
@@ -148,12 +148,12 @@
 
     #ContextMenu a {
       text-decoration: none;
-      color: lightgrey;
-      background: #444;
+      color: rgb(128, 0, 128);
+      background: rgb(255, 228, 72);
       height: 48px;
       width: 250px;
       border-radius: 5px;
-      border: 1px solid lightgrey;
+      border: 1px solid rgb(128, 0, 128);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -163,7 +163,7 @@
 
     #ContextMenu a:hover {
       text-decoration: none;
-      background: #666666;
+      background: rgb(232, 27, 255);
       color: #ffffff
     }
 
@@ -193,12 +193,8 @@
     <div id="ContextMenu" style="display: none;">
       <input id="ID_SavegamesImport" type="file" onchange="onSavegamesImport(this)" accept="application/zip"
         style=display:none></input>
-      <a href="javascript:document.getElementById('ID_SavegamesImport').click();">Import Saves</a>
-      <a href="javascript:onSavegamesExport();">Export Saves</a>
-      <a href="javascript:FSDownload('/log.txt', 'text/plain');">Download Log</a>
-      <a href="https://www.renpy.org/" target="_blank">
-          Powered by Ren'Py
-      </a>
+      <a href="javascript:document.getElementById('ID_SavegamesImport').click();">Importar Saves</a>
+      <a href="javascript:onSavegamesExport();">Exportar Saves</a>
       </span>
     </div>
   </div>
